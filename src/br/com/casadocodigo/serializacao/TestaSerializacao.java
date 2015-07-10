@@ -18,7 +18,7 @@ public class TestaSerializacao {
 		
 		List<ItemEstoque> itens = Arrays.asList(livro1, livro2, livro3);
 		
-		try(ObjectOutputStream serializador = new ObjectOutputStream(new FileOutputStream("itens.bin"))) {
+		try(ObjectOutputStream serializador = new ObjectOutputStream(new FileOutputStream("itens.txt"))) {
 			serializador.writeObject(itens);
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("Arquivo nao foi encontrado");

@@ -2,3 +2,5 @@
 build/
 .project
 .settings/
+.class
+.DS_Store

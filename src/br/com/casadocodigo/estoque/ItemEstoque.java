@@ -1,6 +1,8 @@
 package br.com.casadocodigo.estoque;
 
-public class ItemEstoque {
+import java.io.Serializable;
+
+public class ItemEstoque implements Serializable {
 
 	private String codigo;
 
