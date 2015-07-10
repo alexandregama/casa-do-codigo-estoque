@@ -9,16 +9,19 @@ public class ItemEstoque implements Serializable {
 	private final String codigo;
 
 	private final int quantidade;
+	
+	private transient final int codigoInterno;
 
-	public ItemEstoque(String codigo, int quantidade) {
+	public ItemEstoque(String codigo, int quantidade, int codigoInterno) {
 		this.codigo = codigo;
 		this.quantidade = quantidade;
+		this.codigoInterno = codigoInterno;
 	}
 	
 	@Override
 	public String toString() {
 		return "ItemEstoque [codigo=" + codigo + ", quantidade=" + quantidade
-				+ "]";
+				+ ", codigoInterno=" + codigoInterno + "]";
 	}
 
 	public String getCodigo() {
@@ -29,4 +32,8 @@ public class ItemEstoque implements Serializable {
 		return quantidade;
 	}
 
+	public int getCodigoInterno() {
+		return codigoInterno;
+	}
+	
 }

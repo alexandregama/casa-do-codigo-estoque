@@ -12,9 +12,9 @@ import br.com.casadocodigo.estoque.ItemEstoque;
 public class TestaSerializacao {
 
 	public static void main(String[] args) {
-		ItemEstoque livro1 = new ItemEstoque("ABC", 2);
-		ItemEstoque livro2 = new ItemEstoque("CDE", 4);
-		ItemEstoque livro3 = new ItemEstoque("EFG", 4);
+		ItemEstoque livro1 = new ItemEstoque("ABC", 2, 112);
+		ItemEstoque livro2 = new ItemEstoque("CDE", 4, 998);
+		ItemEstoque livro3 = new ItemEstoque("EFG", 4, 776);
 		
 		List<ItemEstoque> itens = Arrays.asList(livro1, livro2, livro3);
 		
