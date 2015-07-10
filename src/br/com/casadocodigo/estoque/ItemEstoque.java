@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class ItemEstoque implements Serializable {
 
+	private static final long serialVersionUID = -6468531905839365906L;
+
 	private String codigo;
 
 	private int quantidade;
@@ -11,6 +13,12 @@ public class ItemEstoque implements Serializable {
 	public ItemEstoque(String codigo, int quantidade) {
 		this.codigo = codigo;
 		this.quantidade = quantidade;
+	}
+	
+	@Override
+	public String toString() {
+		return "ItemEstoque [codigo=" + codigo + ", quantidade=" + quantidade
+				+ "]";
 	}
 
 	public String getCodigo() {

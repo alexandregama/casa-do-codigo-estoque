@@ -2,5 +2,5 @@
 build/
 .project
 .settings/
-.class
+*.class
 .DS_Store
