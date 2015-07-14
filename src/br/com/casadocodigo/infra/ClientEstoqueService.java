@@ -1,4 +1,4 @@
-package br.com.casadocodigo.rmi;
+package br.com.casadocodigo.infra;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -6,6 +6,7 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
 import br.com.casadocodigo.estoque.ItemEstoque;
+import br.com.casadocodigo.rmi.EstoqueRmi;
 
 public class ClientEstoqueService {
 

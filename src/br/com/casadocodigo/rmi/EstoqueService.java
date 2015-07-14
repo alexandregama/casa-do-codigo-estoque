@@ -9,7 +9,7 @@ public class EstoqueService extends UnicastRemoteObject implements EstoqueRmi {
 
 	private static final long serialVersionUID = 1L;
 	
-	protected EstoqueService() throws RemoteException {
+	public EstoqueService() throws RemoteException {
 		super();
 	}
 

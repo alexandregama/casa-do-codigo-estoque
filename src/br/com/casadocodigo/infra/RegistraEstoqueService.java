@@ -1,9 +1,11 @@
-package br.com.casadocodigo.rmi;
+package br.com.casadocodigo.infra;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
+
+import br.com.casadocodigo.rmi.EstoqueService;
 
 public class RegistraEstoqueService {
 
