@@ -15,7 +15,7 @@ public class EstoqueService extends UnicastRemoteObject implements EstoqueRmi {
 
 	@Override
 	public ItemEstoque getItemEstoque(String codigo) throws RemoteException {
-		Estoque estoque = new EstoqueDao();
+		Estoque estoque = new HashMapEstoqueDao();
 		
 		return estoque.getItemEstoque(codigo);
 	}

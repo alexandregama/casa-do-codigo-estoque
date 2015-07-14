@@ -5,13 +5,13 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import br.com.casadocodigo.rmi.Estoque;
-import br.com.casadocodigo.rmi.EstoqueDao;
+import br.com.casadocodigo.rmi.HashMapEstoqueDao;
 
 public class EstoqueTest {
 
 	@Test
 	public void deveriaRetornarOEstoqueDeUmLivroPeloCodigo() throws Exception {
-		Estoque estoque = new EstoqueDao();
+		Estoque estoque = new HashMapEstoqueDao();
 		
 		ItemEstoque livro = estoque.getItemEstoque("ARQ");
 		

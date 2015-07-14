@@ -5,11 +5,11 @@ import java.util.Map;
 
 import br.com.casadocodigo.estoque.ItemEstoque;
 
-public class EstoqueDao implements Estoque {
+public class HashMapEstoqueDao implements Estoque {
 
 	private Map<String, ItemEstoque> itens = new HashMap<String, ItemEstoque>();
 	
-	public EstoqueDao() {
+	public HashMapEstoqueDao() {
 		itens.put("ARQ", new ItemEstoque("ARQ", 3, 1));
 		itens.put("SOA", new ItemEstoque("SOA", 5, 2));
 		itens.put("TDD", new ItemEstoque("TDD", 8, 3));
