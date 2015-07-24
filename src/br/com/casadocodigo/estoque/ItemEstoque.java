@@ -23,6 +23,10 @@ public class ItemEstoque implements Serializable {
 		return "ItemEstoque [codigo=" + codigo + ", quantidade=" + quantidade
 				+ ", codigoInterno=" + codigoInterno + "]";
 	}
+	
+	public String imprime() {
+		return "Item Estoque pedido: " + codigo;
+	}
 
 	public String getCodigo() {
 		return codigo;

@@ -16,7 +16,7 @@ public class TestaDesserializacao {
 			List<ItemEstoque> itens = (List<ItemEstoque>) desserializador.readObject();
 			
 			for (ItemEstoque item : itens) {
-				System.out.println(item);
+				System.out.println(item.imprime());
 			}
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("Arquivo nao foi encontrado");
